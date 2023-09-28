@@ -6,22 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>asjdnjad</h1>
-    <p>kjadsjad</p>
-    <ul>
-        <li>
-        ,maksjdjhajjasd
-        askjhdbbahdsbajdnand
-        lkasndjbajdadjansjdadbsabda
-        kashdasakmnbd
-        </li>
-        <li>
-            kansdbasjdnk
-            aksjbdjbjasdbadnajndkjandknadkd
-            amsnjdbahsdbabdajdbajdabdshadbhsabdsjbajsdas
-            lkasbdhmahsdad
-            qwndbqhbwdjqnkwnbqdw
-        </li>
-    </ul>
+    <header>
+
+    </header>
+    <main>
+        <section>
+        <form action="1.html" method="post">
+            <fieldset>
+                <legend>Поля ввода данных</legend>
+                <label for="a1">Поле 1:
+                <input type="text" name="q1"id="a1" placeholder="введите сообщение" required>
+            </label>
+            <br>
+           <label for="w2">
+           </label> Поле 2:<input type="text" name="q2" id="w2" autofocus>
+        </label>
+        <br>
+        <label for="w2">Поле 3: Электронная почта
+            <input type="email" name="mail" placeholder="example@gmail.com">
+        </label>
+        <br>
+        <label for="w2">Поле 4: Электронная почта
+            <input type="text" name="mail" placeholder="example@gmail.com" pattern="\S+@[a]">
+        </label>
+        <br>
+            </fieldset>
+            <fieldset>
+                <legend>Поля отправки данных</legend>
+            <input type="button" value="Проверить" onclick="example()">
+            <input type="submit" value="Переправить">
+            <input type="reset" value="Удалить">
+            </fieldset>
+        </form>
+    </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function example(){
+            const x=document.querySelector("w2").value;
+                document.body.innerHTML=x;
+        }
+    </script>
 </body>
 </html>
