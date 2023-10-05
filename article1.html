@@ -2,54 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-
+        <div>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#">пункт_1</a></li>
+                    <li><a href="#">пункт_2</a></li>
+                    <li><a href="#">пункт_3</a>
+                    <ul>
+                        <li><a href="#">подпункт-1</a></li>
+                        <li><a href="#">подпункт-2</a></li>
+                        <li><a href="#">подпункт-3</a></li>
+                        <li><a href="#">подпункт-4</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">пункт_4</a></li>
+                    <li><a href="#">пункт_5</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-        <form action="1.html" method="post">
-            <fieldset>
-                <legend>Поля ввода данных</legend>
-                <label for="a1">Поле 1:
-                <input type="text" name="q1"id="a1" placeholder="введите сообщение" required>
-            </label>
-            <br>
-           <label for="w2">
-           </label> Поле 2:<input type="text" name="q2" id="w2" autofocus>
-        </label>
-        <br>
-        <label for="w2">Поле 3: Электронная почта
-            <input type="email" name="mail" placeholder="example@gmail.com">
-        </label>
-        <br>
-        <label for="w2">Поле 4: Электронная почта
-            <input type="text" name="mail" placeholder="example@gmail.com" pattern="\S+@[a]">
-        </label>
-        <br>
-            </fieldset>
-            <fieldset>
-                <legend>Поля отправки данных</legend>
-            <input type="button" value="Проверить" onclick="example()">
-            <input type="submit" value="Переправить">
-            <input type="reset" value="Удалить">
-            </fieldset>
-        </form>
-    </section>
+        <a href="#windows_modal" Открытое окно></a>
+        <div id="windows_modal" class="modal">
+            <div class="q1">
+                <h1>Содержимое окно</h1>
+            </div>
+        </div>
+        <p>Текст_1Текст_1Текст_1Текст_1Текст_1Текст_1</p>
+        <p id="text_id_1">Текст_1Текст_1Текст_1Текст_1Текст_1Текст_1</p>
+        <p>Текст_1 <b>Текст_1</b> Текст_1Текст_1Текст_1Текст_1</p>
+        <p class="text1">Текст_1Текст_1Текст_1Текст_1Текст_1Текст_1</p>
     </main>
     <footer>
 
     </footer>
-    <script>
-        function example(){
-            const x=document.querySelector("w2").value;
-                document.body.innerHTML=x;
-        }
-    </script>
 </body>
 </html>
